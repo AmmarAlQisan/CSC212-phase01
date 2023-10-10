@@ -1,6 +1,6 @@
 package Phase01;
 
-public class LinkedListADT <T> implements comparable <T>{
+public class LinkedListADT <T> implements comparable{
 	 private Node<T> head;   
 	 private Node<T> current;  
 	 public int size;  
@@ -54,10 +54,10 @@ public class LinkedListADT <T> implements comparable <T>{
 	  public void printInformation() {
 		  Node <T>  pointer = head;  
           while (pointer != null){  
-              System.out.print(pointer.data + "    ");  
+              System.out.print(pointer.data + "");  
               pointer = pointer.next;  
           }  
           System.out.println("");  
-      }  
-	    
+      }
+	  
 }
