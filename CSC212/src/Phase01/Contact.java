@@ -10,12 +10,12 @@ public class Contact implements Comparable<Contact> {
 	private String notes;
 	
 	public Contact() {
-		this.name = "";
-		this.phoneNumber = "";
-		this.emailAddress = "";
-		this.address = "";
-		this.birthday = "";
-		this.notes = "";
+		this.name = " ";
+		this.phoneNumber = " ";
+		this.emailAddress = " ";
+		this.address = " ";
+		this.birthday = " ";
+		this.notes = " ";
 	}
 	public Contact(String name, String phoneNumber, String emailAddress, 
 	   String address, String birthday,String notes) {
