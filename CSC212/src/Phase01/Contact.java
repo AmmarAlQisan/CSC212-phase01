@@ -2,12 +2,12 @@ package Phase01;
 
 public class Contact implements Comparable<Contact> {
 
-	public String name ;
-	public String phoneNumber;
-	public String emailAddress;
-	public String address;
-	public String birthday;
-	public String notes;
+	private String name ;
+	private String phoneNumber;
+	private String emailAddress;
+	private String address;
+	private String birthday;
+	private String notes;
 	
 	public String getName() {
 		return name;
@@ -74,6 +74,7 @@ public class Contact implements Comparable<Contact> {
 		// TODO Auto-generated method stub
 		return 0;
 	}
+	
 	
 	
 	
