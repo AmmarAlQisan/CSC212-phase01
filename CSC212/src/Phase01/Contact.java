@@ -81,8 +81,8 @@ public class Contact implements Comparable<Contact> {
     }
 	@Override
 	public String toString() {
-		return "Contact [name = " + name + ", phoneNumber = " + phoneNumber + ", emailAddress = " + emailAddress
-				+ ", address = " + address + ", birthday = " + birthday + ", notes = " + notes + "]";
+		return "name = " + name + "\nPhoneNumber = " + phoneNumber + "\nemailAddress = " + emailAddress
+				+ "\nAddress = " + address + "\nBirthday = " + birthday + "\nNotes = " + notes;
 	}
 	@Override
 	public int compareTo(Contact o) {
