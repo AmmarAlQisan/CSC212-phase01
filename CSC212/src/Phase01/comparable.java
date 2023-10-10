@@ -1,5 +1,6 @@
 package Phase01;
 
-public interface comparable {
+public interface comparable<T> {
 
 }
+

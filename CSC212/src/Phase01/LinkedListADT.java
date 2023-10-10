@@ -1,7 +1,7 @@
 package Phase01;
 
-public class LinkedListADT <T>{
-	 private Node<T> head;  
+public class LinkedListADT <T> implements comparable <T>{
+	 private Node<T> head;   
 	 private Node<T> current;  
 	 public int size;  
 	      
@@ -18,7 +18,8 @@ public class LinkedListADT <T>{
 	 public boolean full () {  
 	        return false;  
 	 }  
-	 public void findFirst () {  
+	
+	public void findFirst () {  
 	         current = head;  
 	 }  
 	 public void findNext () {  
@@ -35,12 +36,28 @@ public class LinkedListADT <T>{
 
 	 }
 	  public boolean searching(T val) {
-		  return false;
+	   if (head == null)  
+	        return false;  
+	          
+	    Node<T> pointer  = head;  
+	      while ((pointer != null ) && (pointer.getData().compareTo(val) != 0))  
+	    	  pointer = pointer.getNext();  
+	      if ((pointer != null) && (pointer.getData().compareTo(val) == 0)) {  
+	            current = pointer;  
+	            return true;  
+	        }  
+	        return false; 
 	  }
 	  public T remove (T val) { 
 		  return val;
 	  }
 	  public void printInformation() {
-		  
-	  }
+		  Node <T>  pointer = head;  
+          while (pointer != null){  
+              System.out.print(pointer.data + "    ");  
+              pointer = pointer.next;  
+          }  
+          System.out.println("");  
+      }  
+	    
 }
