@@ -73,19 +73,20 @@ public class Contact implements Comparable<Contact> {
 	public void setNotes(String notes) {
 		this.notes = notes;
 	}
-
+    public boolean addEvent(Event x) {
+	       return false;
+}
+    public boolean removeEvent(String TitleOfEvent ) {
+	       return false;
+    }
+	@Override
+	public String toString() {
+		return "Contact [name = " + name + ", phoneNumber = " + phoneNumber + ", emailAddress = " + emailAddress
+				+ ", address = " + address + ", birthday = " + birthday + ", notes = " + notes + "]";
+	}
 	@Override
 	public int compareTo(Contact o) {
-		// TODO Auto-generated method stub
-		return 0;
+		  return (this.name.compareTo(o.name));
+		
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }
